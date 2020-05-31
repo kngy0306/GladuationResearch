@@ -5,9 +5,11 @@ x1=load('x-lambda.txt');
 y1=load('y-lambda.txt');
 z1=load('z-lambda.txt');
 S=load('D65.txt');
+
 %----------�o�͉摜��----------
-height= 25;
-width = 90;
+%height= 25;
+height = 1;
+width = 270;
 result_all=zeros(height,width,3);
 
 %-------------�ʑ����t�B�����̐ݒ�-----------------
@@ -119,7 +121,25 @@ for angle_a = 1: 90;
 end
 
 %----------�摜�ۑ�----------
-imwrite(result_all, ['./', num2str(ice_thick/1000000), 'mm__0-90.png']);
-imshow(result_all);
+% result     1 x 270
+% result_all 1 x 90   x 3 
+for i = 0: 269;
+  color = rem(i, 3);
+  column = idivide(i, 3);
+  result(1, i+1) = round(255 * result_all(1, column+1, color+1));
+end
+
+%save('image_imp.txt', 'result');
+
+%result=zeros(1, 90);
+
+%for i = 1: 90;
+%  result(1, i) = result_all(1, i, 3);
+%end
+
+%save('image_blue.txt', 'result');
+
+%imwrite(result_all, ['./', num2str(ice_thick/1000000), 'mm__0-90.png']);
+%imshow(result_all);
 
 toc;
