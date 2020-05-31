@@ -22,4 +22,4 @@
 
 #### 3. Unity で読み込み
 
-(Unityシミュレーションリポジトリ)[https://github.com/kngy0306/JewelryBubble_Simulation]
+[Unityシミュレーションリポジトリ](https://github.com/kngy0306/JewelryBubble_Simulation)
