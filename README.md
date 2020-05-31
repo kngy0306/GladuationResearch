@@ -21,3 +21,5 @@
 #### 2. img_end.m で ↑ の画像を読み込み、image_end.txt へ出力(1x97200)
 
 #### 3. Unity で読み込み
+
+(Unityシミュレーションリポジトリ)[https://github.com/kngy0306/JewelryBubble_Simulation]
