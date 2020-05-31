@@ -18,6 +18,6 @@
 
 #### 1. Angle90andRotate360.m で氷の厚さを指定し、画像作成(90x360x3) ※Octave で 15 分かかる
 
-#### 1. img_end.m で ↑ の画像を読み込み、image_end.txt へ出力(1x97200)
+#### 2. img_end.m で ↑ の画像を読み込み、image_end.txt へ出力(1x97200)
 
-#### 1. Unity で読み込み
+#### 3. Unity で読み込み
