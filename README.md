@@ -12,7 +12,7 @@
 
 ## Unity で表示するまでの流れ
 
-#### 縦軸0~90 横軸0~360
+#### 縦軸0~90横軸0~360
 
 ![img](https://user-images.githubusercontent.com/57553474/83354563-77494800-a394-11ea-80f5-d2759bc67dc2.png)
 
