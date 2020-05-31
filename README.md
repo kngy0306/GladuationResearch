@@ -16,8 +16,8 @@
 
 ![img](https://user-images.githubusercontent.com/57553474/83354563-77494800-a394-11ea-80f5-d2759bc67dc2.png)
 
-#### Angle90andRotate360.m で氷の厚さを指定し、画像作成(90x360x3) ※Octave で 15 分かかる
+#### 1. Angle90andRotate360.m で氷の厚さを指定し、画像作成(90x360x3) ※Octave で 15 分かかる
 
-#### img_end.m で ↑ の画像を読み込み、image_end.txt へ出力(1x97200)
+#### 1. img_end.m で ↑ の画像を読み込み、image_end.txt へ出力(1x97200)
 
-#### Unity で読み込み
+#### 1. Unity で読み込み
