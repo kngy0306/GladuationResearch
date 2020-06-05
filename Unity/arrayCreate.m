@@ -1,0 +1,43 @@
+clear
+tic;
+
+key = 0;
+while ( (key < 1) || (key > 10) ) 
+  prompt = "Select images 0. ? mm (1~10)\n";
+  key = input(prompt);
+end
+
+
+% 1 -> 0.1mmの画像
+imgArray = containers.Map({1,2,3,4,5,6,7,8,9,10},
+{"img.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png","10.png",});
+
+% 1~10mmの画像をimgファイルから取り出す
+path = strcat("./img/", imgArray(key));
+
+img_rgb = imread(path, 'png'); 
+img_input = img_rgb / 255;
+
+height  = 1;
+width   = 97200;
+img_output = zeros(height,width);
+
+% input       1 x 90 x 3
+% output     1 x 97200 
+
+column = 0;
+row = 0;
+color = 0;
+for i = 0 : 97199;
+  temporary = rem(i , 270);
+  column = idivide(temporary, 3);      %== i / 3
+  row  = idivide(i, 270);   %== i / 270
+  color = rem(i, 3);      %== i % 3
+  
+  img_output(1, i+1) = img_input(column+1, row+1, color+1);
+end
+
+saveName = strcat(num2str(key), '.txt');
+outputPath = strcat("./arrayResult/", saveName);
+save(outputPath, 'img_output');
+toc;
