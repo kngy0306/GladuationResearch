@@ -10,13 +10,14 @@ end
 
 % 1 -> 0.1mmの画像
 imgArray = containers.Map({1,2,3,4,5,6,7,8,9,10},
-{"img.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png","10.png",});
+{"ice0_1.png","ice0_2.png","ice0_3.png","ice0_4.png","ice0_5.png","ice0_6.png","ice0_7.png","ice0_8.png","ice0_9.png","ice1_0.png",});
 
 % 1~10mmの画像をimgファイルから取り出す
 path = strcat("./img/", imgArray(key));
 
 img_rgb = imread(path, 'png'); 
-img_input = img_rgb / 255;
+%img_input = img_rgb / 255; % Octaveで作成した画像の場合
+img_input = img_rgb; % MATLABで作成した画像の場合
 
 height  = 1;
 width   = 97200;

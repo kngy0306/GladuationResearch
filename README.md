@@ -12,9 +12,9 @@
 
 ## Unity で表示するまでの流れ
 
-### Unityファイルの中のimageCreateで画像を作成し、arrayCreateで文字配列を作成。その後Unityで読み取るパスへ配置する
+### Unity ファイルの中の imageCreate で画像を作成し、arrayCreate で文字配列を作成。その後 Unity で読み取るパスへ配置する
 
-#### 縦軸0～90 横軸0～360
+#### 縦軸 0 ～ 90 横軸 0 ～ 360
 
 ![img](https://user-images.githubusercontent.com/57553474/83354563-77494800-a394-11ea-80f5-d2759bc67dc2.png)
 
@@ -24,4 +24,4 @@
 
 #### 3. Unity で読み込み
 
-[Unityシミュレーションリポジトリ](https://github.com/kngy0306/JewelryBubble_Simulation)
+[Unity シミュレーションリポジトリ](https://github.com/kngy0306/JewelryBubble_Simulation)
